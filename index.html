@@ -1,35 +1,43 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="utf-8">
-    <title>Embedded Iframes</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
+        body {
+            text-align: center;
         }
-
-        .iframe-container {
-            display: flex;
-            height: 100%;
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin: 20px;
         }
-
         .iframe {
-            flex: 1;
-            border: none;
+            width: 100%;
+            height: 600px; /* You can adjust the height as needed */
+        }
+        img {
+            display: block;
+            max-width: 50%;
+            margin: 0 auto;
         }
     </style>
 </head>
-
 <body>
-    <div class="iframe-container">
-        <iframe class="iframe" src="nc_2020.html"></iframe>
-        <iframe class="iframe" src="nc_2023.html"></iframe>
+    <h1>DSC 502 Project Media</h1>
+    
+    <div class="grid">
+        <iframe class="iframe" src="https://jonsantini.github.io/nc_2018.html"></iframe>
+        <iframe class="iframe" src="https://jonsantini.github.io/nc_2019.html"></iframe>
+        <iframe class="iframe" src="https://jonsantini.github.io/nc_2020.html"></iframe>
+        <iframe class="iframe" src="https://jonsantini.github.io/nc_2021.html"></iframe>
+        <iframe class="iframe" src="https://jonsantini.github.io/nc_2022.html"></iframe>
+        <iframe class="iframe" src="https://jonsantini.github.io/nc_2023.html"></iframe>
     </div>
-</body>
 
+    <h2>Plots</h2>
+    
+    <img src="https://jonsantini.github.io/plot1.png" alt="Image 1">
+    <img src="https://jonsantini.github.io/plot2.png" alt="Image 2">
+    <img src="https://jonsantini.github.io/plot3.png" alt="Image 3">
+</body>
 </html>
