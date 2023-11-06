@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* Prevent scrollbars */
+        }
+
+        .iframe-container {
+            display: flex; /* Use flexbox to create a horizontal layout */
+            width: 100%;   /* Make the container take the entire width of the page */
+            height: 100%;  /* Make the container take the entire height of the page */
+        }
+
+        .iframe {
+            width: 50%;     /* Each iframe takes up 50% of the container's width */
+            height: 100%;   /* Each iframe takes up the entire height of the container */
+            border: none;   /* Remove the iframe border if desired */
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="iframe-container">
+        
+        <iframe src="/Users/jonathansantini/jonsantini.github.io/nc_precovid.html" class="iframe"></iframe>
+        <iframe src="/Users/jonathansantini/jonsantini.github.io/nc_postcovid.html" class="iframe"></iframe>
+    </div>
+</body>
+</html>
+
+
